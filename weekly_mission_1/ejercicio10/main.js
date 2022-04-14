@@ -1,4 +1,4 @@
-import MyPokemon from './/pokemon'
+import MyPokemon from './pokemon.js'
 
-const pikachu = MyPokemon("pikachu")
+const pikachu = new MyPokemon("pikachu")
 pikachu.sayHello()
