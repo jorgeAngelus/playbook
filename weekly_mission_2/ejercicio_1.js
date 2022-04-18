@@ -43,3 +43,22 @@ const repo = {
    console.log("titulo del Issue " + Issue.title)
    console.log("Asociado del Repo " + Issue.repositoryNameAssociated)
    console.log("Info del Issue: " + Issue.getGeneralInfo())
+
+   const PullRequest = {
+    title: "Primer Hola mundo",
+    branchName: "jorgeMc",
+    dateCreated: "18/04/2022",
+    status: "Open",
+    repositoryNameAssociated: "CarloGilmar",
+    getStatus: function(){
+      return `Status: ${this.status}`
+    },
+    getTitleAndAutor: function(){
+      return `Title is: ${this.title} and autor is ${this.branchName}`
+    }
+   }
+
+   console.log("titulo del PullRequest " + PullRequest.title)
+   console.log("Status "+ PullRequest.getStatus())
+   console.log("Info del PullRequest: " + PullRequest.getTitleAndAutor())
+
