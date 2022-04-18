@@ -1,5 +1,5 @@
 const Twitter ={
-    perfil = {
+    perfil: {
         username: "jorge0710",
         email: "jmc@outlook.com",
         siguiendo: 256,
@@ -8,16 +8,19 @@ const Twitter ={
         fechaunion: "julio 2016",
     },
 
-    comentario = {
+    comentario: {
         texto:"follow me in ....",
-        user: perfil.username 
+        username: "jorge0710" 
     },
 
-    trending_topic ={
+    trending_topic:{
         text:"#FirstLady",
         numTwits: "45 mil"
     },
     hashtag: "#IloveJS"
 }
 
-console.log(Twitter.hashtag)
+console.log(`Perfil: ${Twitter.perfil.username}`)
+console.log(`Comentario: ${Twitter.comentario.texto}`)
+console.log(`treding topic ${Twitter.trending_topic.text}`)
+console.log(`#:  ${Twitter.hashtag}`)
