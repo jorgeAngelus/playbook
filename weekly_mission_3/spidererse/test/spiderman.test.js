@@ -25,8 +25,8 @@ describe("Unit test for Spiderman Class",() =>{
 
 
 describe("Unit test for Spiderman Class",() =>{
-    test('1) Create an spiderman object',() =>{
-        const tomHolland = new Spiderman("Spiderman Marvel",25,"Tom Holland",5,"Marvell")
+    test('2) Create a function getInfo',() =>{
+        const tomHolland = new Spiderman("Spiderman Marvel",25,"Tom Holland",5,"Marvel studio")
         expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel studio")
     });
 })
