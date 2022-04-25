@@ -3,7 +3,7 @@ const User = require("./../../app/models/User")
 describe("Unit Test for User Class",() =>{
     test('Create an User object',() =>{
         //codigo de la app
-        const user = new User(1,"jorgemc07","Jorge","Bio","dateCreated","lastCreated")
+        const user = new User(1,"jorgemc07","Jorge","Bio","dateCreated","lastUpdate")
 
         //validando resultados
         expect(user.id).toBe(1)
@@ -11,6 +11,6 @@ describe("Unit Test for User Class",() =>{
         expect(user.name).toBe("Jorge")
         expect(user.bio).toBe("Bio")
         expect(user.dateCreated).toBe("dateCreated")
-        expect(user.lastCreated).toBe("lastCreated")
+        expect(user.lastUpdate).toBe("lastUpdate")
     });
 })
